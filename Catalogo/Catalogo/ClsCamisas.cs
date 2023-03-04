@@ -36,12 +36,25 @@ namespace Catalogo
         {
             return 6.60;
         }
+        public void pagarCamisaOxford()
+        {
+            double pagar = double.Parse(Console.ReadLine());
+            double total = pagar - precio();
+            if (total < 0)
+            {
+                Console.WriteLine("Resultado: debe la cantidad de $" + total);
+            }
+            else
+            {
+                Console.WriteLine("Resultado: su vuelto es de $" + total);
+            }
 
-       
+        }
+
     }
-    
-    
-    
+   
+
+
 
 
 }
