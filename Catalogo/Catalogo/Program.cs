@@ -94,21 +94,25 @@ namespace Catalogo
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 1! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[0]);
-                                    Console.WriteLine("\nTalla: " + tallaCamisa[0]);
-                                    Console.WriteLine("\nGenero: "+ genero[0]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[1]);
+                                    Console.WriteLine("\nGenero: "+ genero[1]);
                                     Console.WriteLine("\nCalidad: " + camisaOxford.calidad());
                                     Console.WriteLine("\nEstilo: " + camisaOxford.estilo());
                                     Console.WriteLine("\nColor: " + camisaOxford.color());
                                     Console.WriteLine("\nPrecio: " + camisaOxford.precio());
                                     Console.WriteLine("\nIngrese la cantidad con la que pagara:");
-                                    camisaOxford.pagarCamisaOxford();
+                                    camisaOxford.pagarcamisaOxford();
 
                                     Console.ReadKey();
 
                                     break;
                                 case "2":
+                                   
+                                    
+                                    Console.ReadKey();
                                     break;
                                 case "3":
+
                                     break;
                                 case "4":
                                     break;
