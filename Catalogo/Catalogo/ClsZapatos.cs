@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Catalogo
 {
-    internal class ClsDescuentos
+    abstract class ClsZapatos
     {
     }
 }

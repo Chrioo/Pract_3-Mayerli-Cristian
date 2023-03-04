@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsDescuentos.cs" />
-    <Compile Include="ClsPersona.cs" />
-    <Compile Include="ClsPrendas.cs" />
+    <Compile Include="ClsArticulosDescuento.cs" />
+    <Compile Include="ClsCamisas.cs" />
+    <Compile Include="ClsPantalones.cs" />
+    <Compile Include="ClsVestidos.cs" />
+    <Compile Include="ClsZapatos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
