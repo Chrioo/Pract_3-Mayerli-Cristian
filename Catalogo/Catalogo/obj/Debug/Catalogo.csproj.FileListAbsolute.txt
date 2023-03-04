@@ -1,0 +1,16 @@
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\bin\Debug\Catalogo.exe.config
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\bin\Debug\Catalogo.exe
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\bin\Debug\Catalogo.pdb
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\obj\Debug\Catalogo.csproj.AssemblyReference.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\obj\Debug\Catalogo.csproj.SuggestedBindingRedirects.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\obj\Debug\Catalogo.csproj.CoreCompileInputs.cache
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\obj\Debug\Catalogo.exe
+C:\Users\mmaye\Documents\GitHub\Laboratorio1ProgramacionIII\Catalogo\Catalogo\obj\Debug\Catalogo.pdb
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\bin\Debug\Catalogo.exe.config
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\bin\Debug\Catalogo.exe
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\bin\Debug\Catalogo.pdb
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\obj\Debug\Catalogo.csproj.AssemblyReference.cache
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\obj\Debug\Catalogo.csproj.SuggestedBindingRedirects.cache
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\obj\Debug\Catalogo.csproj.CoreCompileInputs.cache
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\obj\Debug\Catalogo.exe
+C:\Users\mmaye\Documents\GitHub\Pract_3-Mayerli-Cristian\Catalogo\Catalogo\obj\Debug\Catalogo.pdb
