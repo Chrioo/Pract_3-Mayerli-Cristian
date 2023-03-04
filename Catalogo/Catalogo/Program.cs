@@ -10,9 +10,30 @@ namespace Catalogo
     {
         static void Main(string[] args)
         {
+            //Clases de Camisas
             camisaOxford camisaOxford = new camisaOxford();
-            //Clases de vestidos
-            vestidoGala vestidoGala = new vestidoGala();
+            CamisasdeVestir camisasdeVestir = new CamisasdeVestir();
+            Camisadefranela camisadefranela= new Camisadefranela(); 
+            Camisapolo camisapolo= new Camisapolo();
+            Camisa_hawaiana camisa_Hawaiana= new Camisa_hawaiana();
+            CamisaDedenim  camisaDedenim= new CamisaDedenim();  
+            Camisadecuadros camisadecuadros = new Camisadecuadros();    
+            Camisadelino camisadelino = new Camisadelino(); 
+            Camisademangacorta camisademangacorta = new Camisademangacorta();
+            Camisawestern camisawestern = new Camisawestern();
+            //Clases de Pantalones
+            PantalonVaquero pantalonVaquero = new PantalonVaquero();
+            PantalonRecto pantalonRecto = new PantalonRecto();
+            Pantalon_Skynni pantalon_Skynni = new Pantalon_Skynni();
+            PantalonSlim_fit pantalonSlim_Fit = new PantalonSlim_fit();
+            PantalonesRegular_Fit pantalonesRegular_Fit= new PantalonesRegular_Fit();
+            Pantalones_Loose pantalones_Loose = new Pantalones_Loose();
+            PantalonRelax_fit pantalonRelax_Fit = new PantalonRelax_fit();
+            PantaloDrop_Croatch pantaloDrop_Croatch = new PantaloDrop_Croatch();
+            PantalónHigh_rise pantalónHigh_Rise = new PantalónHigh_rise();
+            PantalónLow_rise pantalónLow_Rise = new PantalónLow_rise();
+             //Clases de vestidos
+             vestidoGala vestidoGala = new vestidoGala();
             vestidoCoctel vestidoCoctel= new vestidoCoctel();
             vestidolargo vestidolargo = new vestidolargo(); 
             vestidoCorto vestidoCorto=new vestidoCorto();
@@ -75,7 +96,7 @@ namespace Catalogo
                         Console.WriteLine("\n¡Ha seleccionado la Opción 1! Presione una tecla para continuar.");
                         List<string> camisas = new List<string>()
                         {
-                            "1-Camisa Oxforn","2-Camisa de vestir","3-Camisa de franela","4-Camisa polo","5-Camisa hawaiana","6-Camisa de denim","7-Camisa de lino","8-Camisa de manga corta","9-Camisa western","10-Camisa de cuadros","11-Camisa de cuello mao","12-Camisa Henley","13-Camisa de popelina","14-Camisa de seda","15-Salir"
+                            "1-Camisa Oxforn","2-Camisa de vestir","3-Camisa de franela","4-Camisa polo","5-Camisa hawaiana","6-Camisa de denim","7-Camisa de lino","8-Camisa de manga corta","9-Camisa western","10-Camisa de cuadros","11-Salir"
 
                         };
                         foreach (string camisa in camisas)
@@ -107,37 +128,132 @@ namespace Catalogo
 
                                     break;
                                 case "2":
-                                   
-                                    
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 2! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[0]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisasdeVestir.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisasdeVestir.estilo());
+                                    Console.WriteLine("\nColor: " + camisasdeVestir.color());
+                                    Console.WriteLine("\nPrecio: " + camisasdeVestir.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisasdeVestir.pagarCamisasdeVestir();
                                     Console.ReadKey();
                                     break;
                                 case "3":
-
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 3! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[2]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisadefranela.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisadefranela.estilo());
+                                    Console.WriteLine("\nColor: " + camisadefranela.color());
+                                    Console.WriteLine("\nPrecio: " + camisadefranela.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisadefranela.pagarCamisadefranela();
+                                    Console.ReadKey();
                                     break;
                                 case "4":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 4! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[3]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisapolo.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisapolo.estilo());
+                                    Console.WriteLine("\nColor: " + camisapolo.color());
+                                    Console.WriteLine("\nPrecio: " + camisapolo.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisapolo.pagarCamisapolo();
+                                    Console.ReadKey();
                                     break;
                                 case "5":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 5! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[4]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisa_Hawaiana.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisa_Hawaiana.estilo());
+                                    Console.WriteLine("\nColor: " + camisa_Hawaiana.color());
+                                    Console.WriteLine("\nPrecio: " + camisa_Hawaiana.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisa_Hawaiana.pagarCamisa_hawaiana();
+                                    Console.ReadKey();
                                     break;
                                 case "6":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 6! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[5]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisaDedenim.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisaDedenim.estilo());
+                                    Console.WriteLine("\nColor: " + camisaDedenim.color());
+                                    Console.WriteLine("\nPrecio: " + camisaDedenim.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisaDedenim.pagarCamisaDedenim();
+                                    Console.ReadKey();
                                     break;
                                 case "7":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 7! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[6]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisadelino.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisadelino.estilo());
+                                    Console.WriteLine("\nColor: " + camisadelino.color());
+                                    Console.WriteLine("\nPrecio: " + camisadelino.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisadelino.pagarCamisadelino();
+                                    Console.ReadKey();
                                     break;
                                 case "8":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 8! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[7]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisademangacorta.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisademangacorta.estilo());
+                                    Console.WriteLine("\nColor: " + camisademangacorta.color());
+                                    Console.WriteLine("\nPrecio: " + camisademangacorta.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisademangacorta.pagarCamisademangacorta();
+                                    Console.ReadKey();
                                     break;
                                 case "9":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 9! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[8]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + camisawestern.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisawestern.estilo());
+                                    Console.WriteLine("\nColor: " + camisawestern.color());
+                                    Console.WriteLine("\nPrecio: " + camisawestern.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisawestern.pagarCamisawestern();
+                                    Console.ReadKey();
                                     break;
                                 case "10":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 10! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + camisas[9]);
+                                    Console.WriteLine("\nTalla: " + tallaCamisa[2]);
+                                    Console.WriteLine("\nGenero: " + genero[3]);
+                                    Console.WriteLine("\nCalidad: " + camisadecuadros.calidad());
+                                    Console.WriteLine("\nEstilo: " + camisadecuadros.estilo());
+                                    Console.WriteLine("\nColor: " + camisadecuadros.color());
+                                    Console.WriteLine("\nPrecio: " + camisadecuadros.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    camisadecuadros.pagarCamisadecuadros();
+                                    Console.ReadKey();
                                     break;
                                 case "11":
-                                    break;
-                                case "12":
-                                    break;
-                                case "13":
-                                    break;
-                                case "14":
-                                    break;
-
-                                case "15":
                                     Console.WriteLine("¡Eligio salir! fin de las consultas");
                                     break;
                                 default:
@@ -146,13 +262,178 @@ namespace Catalogo
                             }
 
                         }
-                        while (Option != "15");
+                        while (Option != "11");
                        
                         Console.ReadKey();
                         break;
                     case "2":
+
                         Console.Clear();
                         Console.WriteLine("\n¡Ha seleccionado la Opción 2! Presione una tecla para continuar.");
+                        Console.WriteLine("-----------------------Catalogo de Pantalones-----------------------\n");
+                        List<string> pantalones = new List<string>()
+                        {
+                            "1-PantalonVaquero","2-PantalonRecto","3-Pantalon_Skynni","4-PantalonSlim_fit","5-PantalonesRegular_Fit","6-Pantalones_Loose","7-PantalonRelax_fit","8-PantaloDrop_Croatch","9-PantalónHigh_rise","10-PantalónLow_rise","11-Salir"
+
+                        };
+                        foreach (string pantalon in pantalones)
+                        {
+                            Console.WriteLine(pantalon);
+                        }
+                        List<string> tallaPantalones = new List<string>() { "XS extra pequeña", "S pequeña", "M mediana", "L grande", "XL extra grande", "XXL doble extra grande", "XXXL triple extra grande" };
+                        do
+                        {
+                            Console.WriteLine("Ingresa un número del 1 al 5:");
+                            Option = Console.ReadLine();
+
+                            switch (Option)
+                            {
+                                case "1":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 1! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[0]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[1]);
+                                    Console.WriteLine("\nGenero: " + genero[1]);
+                                    Console.WriteLine("\nCalidad: " + pantalonVaquero.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalonVaquero.estilo());
+                                    Console.WriteLine("\nColor: " + pantalonVaquero.color());
+                                    Console.WriteLine("\nPrecio: " + pantalonVaquero.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalonVaquero.pagarPantalonVaquero();
+
+                                    Console.ReadKey();
+
+                                    break;
+                                case "2":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 2! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[0]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantalonRecto.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalonRecto.estilo());
+                                    Console.WriteLine("\nColor: " + pantalonRecto.color());
+                                    Console.WriteLine("\nPrecio: " + pantalonRecto.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalonRecto.pagarPantalonRecto();
+                                    Console.ReadKey();
+                                    break;
+                                case "3":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 3! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[2]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantalon_Skynni.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalon_Skynni.estilo());
+                                    Console.WriteLine("\nColor: " + pantalon_Skynni.color());
+                                    Console.WriteLine("\nPrecio: " + pantalon_Skynni.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalon_Skynni.pagarPantalon_Skynni();
+                                    Console.ReadKey();
+                                    break;
+                                case "4":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 4! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[3]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantalonSlim_Fit.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalonSlim_Fit.estilo());
+                                    Console.WriteLine("\nColor: " + pantalonSlim_Fit.color());
+                                    Console.WriteLine("\nPrecio: " + pantalonSlim_Fit.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalonSlim_Fit.pagarPantalonSlim_fit();
+                                    Console.ReadKey();
+                                    break;
+                                case "5":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 5! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[4]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantalonesRegular_Fit.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalonesRegular_Fit.estilo());
+                                    Console.WriteLine("\nColor: " + pantalonesRegular_Fit.color());
+                                    Console.WriteLine("\nPrecio: " + pantalonesRegular_Fit.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalonesRegular_Fit.pagarPantalonesRegular_Fit();
+                                    Console.ReadKey();
+                                    break;
+                                case "6":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 6! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[5]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantalones_Loose.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalones_Loose.estilo());
+                                    Console.WriteLine("\nColor: " + pantalones_Loose.color());
+                                    Console.WriteLine("\nPrecio: " + pantalones_Loose.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalones_Loose.pagarPantalones_Loose();
+                                    Console.ReadKey();
+                                    break;
+                                case "7":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 7! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[6]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantalonRelax_Fit.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalonRelax_Fit.estilo());
+                                    Console.WriteLine("\nColor: " + pantalonRelax_Fit.color());
+                                    Console.WriteLine("\nPrecio: " + pantalonRelax_Fit.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalonRelax_Fit.pagarPantalonRelax_fit();
+                                    Console.ReadKey();
+                                    break;
+                                case "8":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 8! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[7]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantaloDrop_Croatch.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantaloDrop_Croatch.estilo());
+                                    Console.WriteLine("\nColor: " + pantaloDrop_Croatch.color());
+                                    Console.WriteLine("\nPrecio: " + pantaloDrop_Croatch.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantaloDrop_Croatch.pagarPantaloDrop_Croatch();
+                                    Console.ReadKey();
+                                    break;
+                                case "9":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 9! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[8]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[2]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
+                                    Console.WriteLine("\nCalidad: " + pantalónHigh_Rise.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalónHigh_Rise.estilo());
+                                    Console.WriteLine("\nColor: " + pantalónHigh_Rise.color());
+                                    Console.WriteLine("\nPrecio: " + pantalónHigh_Rise.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalónHigh_Rise.pagarPantalónHigh_risee();
+                                    Console.ReadKey();
+                                    break;
+                                case "10":
+                                    Console.WriteLine("\n¡Ha seleccionado la Opción 10! ");
+                                    Console.WriteLine("********** Datos del producto ********** ");
+                                    Console.WriteLine("\nProducto: " + pantalones[9]);
+                                    Console.WriteLine("\nTalla: " + tallaPantalones[2]);
+                                    Console.WriteLine("\nGenero: " + genero[3]);
+                                    Console.WriteLine("\nCalidad: " + pantalónLow_Rise.calidad());
+                                    Console.WriteLine("\nEstilo: " + pantalónLow_Rise.estilo());
+                                    Console.WriteLine("\nColor: " + pantalónLow_Rise.color());
+                                    Console.WriteLine("\nPrecio: " + pantalónLow_Rise.precio());
+                                    Console.WriteLine("\nIngrese la cantidad con la que pagara:");
+                                    pantalónLow_Rise.pagarPantalónLow_rise();
+                                    Console.ReadKey();
+                                    break;
+
+                            }
+                        }
+                        while (Option != "11");
                         Console.ReadKey();
                         break;
                     case "3":

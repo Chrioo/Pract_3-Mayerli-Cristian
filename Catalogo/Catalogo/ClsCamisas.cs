@@ -424,7 +424,6 @@ namespace Catalogo
 
         }
 
-
         class Camisadecuellomao : ClsCamisas
         {
             public override string calidad()
