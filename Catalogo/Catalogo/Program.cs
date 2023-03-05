@@ -66,7 +66,7 @@ namespace Catalogo
             VestidoDeNoche vestidoDeNoche = new VestidoDeNoche();
             VestidoDeSeda vestidoDeSeda = new VestidoDeSeda();
 
-            string Option;
+            int Option=0;
             //Lista de generos para las prendas
             List<string> genero= new List<string>() { "Hombre", "Mujer", "para Hombre y Mujer" };
             do
@@ -85,13 +85,13 @@ namespace Catalogo
                 Console.WriteLine("6. Salir\n");
                 Console.Write("Seleccione una opción (1-6): ");
 
-                Option = Console.ReadLine();
+                Option = Int32.Parse(Console.ReadLine());
 
 
 
                 switch (Option)
                 {
-                    case "1":
+                    case 1:
                         Console.Clear();
                         Console.WriteLine("\n¡Ha seleccionado la Opción 1! Presione una tecla para continuar.");
                         List<string> camisas = new List<string>()
@@ -107,11 +107,11 @@ namespace Catalogo
                         do
                         {
                             Console.WriteLine("Ingresa un número del 1 al 11:");
-                            Option = Console.ReadLine();
+                            Option = Int32.Parse(Console.ReadLine());
 
                             switch (Option)
                             {
-                                case "1":
+                                case 1:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 1! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[0]);
@@ -127,7 +127,7 @@ namespace Catalogo
                                     Console.ReadKey();
 
                                     break;
-                                case "2":
+                                case 2:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 2! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[0]);
@@ -141,7 +141,7 @@ namespace Catalogo
                                     camisasdeVestir.pagarCamisasdeVestir();
                                     Console.ReadKey();
                                     break;
-                                case "3":
+                                case 3:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 3! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[2]);
@@ -155,7 +155,7 @@ namespace Catalogo
                                     camisadefranela.pagarCamisadefranela();
                                     Console.ReadKey();
                                     break;
-                                case "4":
+                                case 4:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 4! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[3]);
@@ -169,7 +169,7 @@ namespace Catalogo
                                     camisapolo.pagarCamisapolo();
                                     Console.ReadKey();
                                     break;
-                                case "5":
+                                case 5:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 5! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[4]);
@@ -183,7 +183,7 @@ namespace Catalogo
                                     camisa_Hawaiana.pagarCamisa_hawaiana();
                                     Console.ReadKey();
                                     break;
-                                case "6":
+                                case 6:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 6! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[5]);
@@ -197,7 +197,7 @@ namespace Catalogo
                                     camisaDedenim.pagarCamisaDedenim();
                                     Console.ReadKey();
                                     break;
-                                case "7":
+                                case 7:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 7! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[6]);
@@ -211,7 +211,7 @@ namespace Catalogo
                                     camisadelino.pagarCamisadelino();
                                     Console.ReadKey();
                                     break;
-                                case "8":
+                                case 8:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 8! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[7]);
@@ -225,7 +225,7 @@ namespace Catalogo
                                     camisademangacorta.pagarCamisademangacorta();
                                     Console.ReadKey();
                                     break;
-                                case "9":
+                                case 9:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 9! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[8]);
@@ -239,12 +239,12 @@ namespace Catalogo
                                     camisawestern.pagarCamisawestern();
                                     Console.ReadKey();
                                     break;
-                                case "10":
+                                case 10:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 10! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + camisas[9]);
                                     Console.WriteLine("\nTalla: " + tallaCamisa[2]);
-                                    Console.WriteLine("\nGenero: " + genero[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
                                     Console.WriteLine("\nCalidad: " + camisadecuadros.calidad());
                                     Console.WriteLine("\nEstilo: " + camisadecuadros.estilo());
                                     Console.WriteLine("\nColor: " + camisadecuadros.color());
@@ -253,20 +253,22 @@ namespace Catalogo
                                     camisadecuadros.pagarCamisadecuadros();
                                     Console.ReadKey();
                                     break;
-                                case "11":
+                                case 11:
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("¡Eligio salir! fin de las consultas");
                                     break;
                                 default:
+                                    
                                     Console.WriteLine("Opción inválida");
                                     break;
                             }
 
                         }
-                        while (Option != "11");
+                        while (Option != 11);
                        
                         Console.ReadKey();
                         break;
-                    case "2":
+                    case 2:
 
                         Console.Clear();
                         Console.WriteLine("\n¡Ha seleccionado la Opción 2! Presione una tecla para continuar.");
@@ -284,11 +286,11 @@ namespace Catalogo
                         do
                         {
                             Console.WriteLine("Ingresa un número del 1 al 11:");
-                            Option = Console.ReadLine();
+                            Option = Int32.Parse(Console.ReadLine());
 
                             switch (Option)
                             {
-                                case "1":
+                                case 1:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 1! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[0]);
@@ -304,7 +306,7 @@ namespace Catalogo
                                     Console.ReadKey();
 
                                     break;
-                                case "2":
+                                case 2:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 2! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[0]);
@@ -318,7 +320,7 @@ namespace Catalogo
                                     pantalonRecto.pagarPantalonRecto();
                                     Console.ReadKey();
                                     break;
-                                case "3":
+                                case 3:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 3! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[2]);
@@ -332,7 +334,7 @@ namespace Catalogo
                                     pantalon_Skynni.pagarPantalon_Skynni();
                                     Console.ReadKey();
                                     break;
-                                case "4":
+                                case 4:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 4! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[3]);
@@ -346,7 +348,7 @@ namespace Catalogo
                                     pantalonSlim_Fit.pagarPantalonSlim_fit();
                                     Console.ReadKey();
                                     break;
-                                case "5":
+                                case 5:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 5! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[4]);
@@ -360,7 +362,7 @@ namespace Catalogo
                                     pantalonesRegular_Fit.pagarPantalonesRegular_Fit();
                                     Console.ReadKey();
                                     break;
-                                case "6":
+                                case 6:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 6! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[5]);
@@ -374,7 +376,7 @@ namespace Catalogo
                                     pantalones_Loose.pagarPantalones_Loose();
                                     Console.ReadKey();
                                     break;
-                                case "7":
+                                case 7:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 7! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[6]);
@@ -388,7 +390,7 @@ namespace Catalogo
                                     pantalonRelax_Fit.pagarPantalonRelax_fit();
                                     Console.ReadKey();
                                     break;
-                                case "8":
+                                case 8:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 8! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[7]);
@@ -402,7 +404,7 @@ namespace Catalogo
                                     pantaloDrop_Croatch.pagarPantaloDrop_Croatch();
                                     Console.ReadKey();
                                     break;
-                                case "9":
+                                case 9:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 9! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[8]);
@@ -416,12 +418,12 @@ namespace Catalogo
                                     pantalónHigh_Rise.pagarPantalónHigh_risee();
                                     Console.ReadKey();
                                     break;
-                                case "10":
+                                case 10:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 10! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: " + pantalones[9]);
                                     Console.WriteLine("\nTalla: " + tallaPantalones[2]);
-                                    Console.WriteLine("\nGenero: " + genero[3]);
+                                    Console.WriteLine("\nGenero: " + genero[2]);
                                     Console.WriteLine("\nCalidad: " + pantalónLow_Rise.calidad());
                                     Console.WriteLine("\nEstilo: " + pantalónLow_Rise.estilo());
                                     Console.WriteLine("\nColor: " + pantalónLow_Rise.color());
@@ -430,19 +432,21 @@ namespace Catalogo
                                     pantalónLow_Rise.pagarPantalónLow_rise();
                                     Console.ReadKey();
                                     break;
-                                case "11":
+                                case 11:
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("¡Eligio salir! fin de las consultas");
                                     break;
+
                                 default:
                                     Console.WriteLine("Opción inválida");
                                     break;
 
                             }
                         }
-                        while (Option != "11");
+                        while (Option != 11);
                         Console.ReadKey();
                         break;
-                    case "3":
+                    case 3:
                         Console.Clear();
                         Console.WriteLine("\n¡Ha seleccionado la Opción 3! Presione una tecla para continuar.");
                         Console.WriteLine("-----------------------Catalogo de Vestidos-----------------------\n");
@@ -459,11 +463,11 @@ namespace Catalogo
                         do
                         {
                             Console.WriteLine("Ingresa un número del 1 al 11:");
-                            Option = Console.ReadLine();
+                            Option = Int32.Parse(Console.ReadLine());
 
                             switch (Option)
                             {
-                                case "1":
+                                case 1:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 1! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -479,7 +483,7 @@ namespace Catalogo
                                     Console.ReadKey();
 
                                     break;
-                                case "2":
+                                case 2:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 2! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -494,7 +498,7 @@ namespace Catalogo
                                     vestidoCoctel.pagarVestidoCoctel();
                                     Console.ReadKey();
                                     break;
-                                case "3":
+                                case 3:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 3! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -509,7 +513,7 @@ namespace Catalogo
                                     vestidolargo.pagarVestidoLargo();
                                     Console.ReadKey();
                                     break;
-                                case "4":
+                                case 4:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 4! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -524,7 +528,7 @@ namespace Catalogo
                                     vestidoCorto.pagarVestidoCorto();
                                     Console.ReadKey();
                                     break;
-                                case "5":
+                                case 5:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 5! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -539,7 +543,7 @@ namespace Catalogo
                                     vestidoNovia.pagarVestidoNovia();
                                     Console.ReadKey();
                                     break;
-                                case "6":
+                                case 6:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 6! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -554,7 +558,7 @@ namespace Catalogo
                                     vestidoFiesta.pagarVestidoFiesta();
                                     Console.ReadKey();
                                     break;
-                                case "7":
+                                case 7:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 7! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -569,7 +573,7 @@ namespace Catalogo
                                     vestidoNoche.pagarVestidoNoche();
                                     Console.ReadKey();
                                     break;
-                                case "8":
+                                case 8:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 8! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -584,7 +588,7 @@ namespace Catalogo
                                     vestidoTubo.pagarVestidoTubo();
                                     Console.ReadKey();
                                     break;
-                                case "9":
+                                case 9:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 9! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -599,7 +603,7 @@ namespace Catalogo
                                     vestidoEncaje.pagarVestidoEncaje();
                                     Console.ReadKey();
                                     break;
-                                case "10":
+                                case 10:
                                     
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 10! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -614,7 +618,8 @@ namespace Catalogo
                                     vestidoSeda.pagarVestidoSeda();
                                     Console.ReadKey();
                                     break;
-                                case "11":
+                                case 11:
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("¡Eligio salir! fin de las consultas");
                                     break;
                                 default:
@@ -623,11 +628,11 @@ namespace Catalogo
                             }
 
                         }
-                        while (Option != "11");
+                        while (Option != 11);
 
                         Console.ReadKey();
                         break;
-                    case "4":
+                    case 4:
                         Console.Clear();
                         Console.WriteLine("\n¡Ha seleccionado la Opción 4! Presione una tecla para continuar.");
                         Console.WriteLine("-----------------------Catalogo de zapatos-----------------------\n");
@@ -647,11 +652,11 @@ namespace Catalogo
                         do
                         {
                             Console.WriteLine("Ingresa un número del 1 al 11:");
-                            Option = Console.ReadLine();
+                            Option = Int32.Parse(Console.ReadLine());
 
                             switch (Option)
                             {
-                                case "1":
+                                case 1:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 1! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -663,13 +668,13 @@ namespace Catalogo
                                     Console.WriteLine("\nEstilo: " + taconAlto.estilo());
                                     Console.WriteLine("\nColor: " + taconAlto.color());
                                     Console.WriteLine("\nMaterial: " + taconAlto.material());
-                                    Console.WriteLine("\nPrecio: $" +taconAlto.precio());
+                                    Console.WriteLine("\nPrecio: $" + taconAlto.precio());
                                     Console.WriteLine("\nIngrese la cantidad con la que pagara:");
                                     taconAlto.pagarTaconAlto();
                                     Console.ReadKey();
 
                                     break;
-                                case "2":
+                                case 2:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 2! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -686,7 +691,7 @@ namespace Catalogo
                                     taconBajo.pagarTaconBajo();
                                     Console.ReadKey();
                                     break;
-                                case "3":
+                                case 3:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 3! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -703,7 +708,7 @@ namespace Catalogo
                                     plataforma.pagarPlataforma();
                                     Console.ReadKey();
                                     break;
-                                case "4":
+                                case 4:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 4! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -720,7 +725,7 @@ namespace Catalogo
                                     zapatosC.pagarC();
                                     Console.ReadKey();
                                     break;
-                                case "5":
+                                case 5:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 5! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -737,7 +742,7 @@ namespace Catalogo
                                     zapatosPunta.pagarPunta();
                                     Console.ReadKey();
                                     break;
-                                case "6":
+                                case 6:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 6! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -754,7 +759,7 @@ namespace Catalogo
                                     zapatosBallet.pagarBallet();
                                     Console.ReadKey();
                                     break;
-                                case "7":
+                                case 7:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 7! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -771,7 +776,7 @@ namespace Catalogo
                                     zapatosSalon.pagarSalon();
                                     Console.ReadKey();
                                     break;
-                                case "8":
+                                case 8:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 8! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -788,7 +793,7 @@ namespace Catalogo
                                     zapatosCuero.pagarCuero();
                                     Console.ReadKey();
                                     break;
-                                case "9":
+                                case 9:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 9! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -805,7 +810,7 @@ namespace Catalogo
                                     zapatosGamuza.pagarGamuza();
                                     Console.ReadKey();
                                     break;
-                                case "10":
+                                case 10:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 10! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -822,38 +827,40 @@ namespace Catalogo
                                     zapatosCharol.pagarCharol();
                                     Console.ReadKey();
                                     break;
-                                case "11":
+                                case 11:
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("¡Eligio salir! fin de las consultas");
                                     break;
                                 default:
+                                   
                                     Console.WriteLine("Opción inválida");
                                     break;
                             }
 
                         }
-                        while (Option != "11");
+                        while (Option != 11);
 
                         Console.ReadKey();
                         break;
-                    case "5":
+                    case 5:
                         Console.Clear();
                         Console.WriteLine("\n¡Ha seleccionado la Opción 5! Presione una tecla para continuar.");
                         Console.WriteLine("-----------------------Catalogo de Articulos con descuento-----------------------\n");
 
-                        Console.WriteLine("-----------------------Mochilas-----------------------\n");
-                        Console.WriteLine("\n1 - Mochila para portatil-----------------------------$45.00-------20%");
-                        Console.WriteLine("\n2 - Mochila escolar-----------------------------------$20.50-------10%");
-                        Console.WriteLine("\n3 - Michila para viajes-----------------------------  $100.0-------50%\n");
+                        Console.WriteLine("-----------------------Mochilas-----------------------\n"+
+                        "\n1 - Mochila para portatil-----------------------------$45.00-------20%"+
+                        "\n2 - Mochila escolar-----------------------------------$20.50-------10%"+
+                        "\n3 - Michila para viajes-----------------------------  $100.0-------50%\n"+
 
-                        Console.WriteLine("-----------------------Zapatos-----------------------\n");
-                        Console.WriteLine("\n4 - Zapatos de ballet---------------------------------$90.0-------50%");
-                        Console.WriteLine("\n5 - Zapatos de cuero----------------------------------$50.0-------30%");
-                        Console.WriteLine("\n6 - Zapatos de charol---------------------------------$66.0-------40%\n");
+                        "-----------------------Zapatos-----------------------\n"+
+                        "\n4 - Zapatos de ballet---------------------------------$90.0-------50%"+
+                        "\n5 - Zapatos de cuero----------------------------------$50.0-------30%"+
+                        "\n6 - Zapatos de charol---------------------------------$66.0-------40%\n"+
 
-                        Console.WriteLine("-----------------------Vestidos-----------------------\n");
-                        Console.WriteLine("\n7 - Vetido de gala------------------------------------$56.90-------20%");
-                        Console.WriteLine("\n8 - Vestido de noche----------------------------------$90.0-------10%");
-                        Console.WriteLine("\n9 - Vestido de seda-----------------------------------$20.0-------10% \n");
+                        "-----------------------Vestidos-----------------------\n"+
+                        "\n7 - Vetido de gala------------------------------------$56.90-------20%"+
+                        "\n8 - Vestido de noche----------------------------------$90.0-------10%"+
+                        "\n9 - Vestido de seda-----------------------------------$20.0-------10% \n");
 
                         Console.WriteLine("----------------------------------------------\n");
                         Console.WriteLine("\n10 - Salir");
@@ -864,11 +871,11 @@ namespace Catalogo
                         do
                         {
                             Console.WriteLine("Ingresa un número del 1 al 10:");
-                            Option = Console.ReadLine();
+                            Option = Int32.Parse(Console.ReadLine());
 
                             switch (Option)
                             {
-                                case "1":
+                                case 1:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 1! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto:  Mochila para portatil" );
@@ -881,7 +888,7 @@ namespace Catalogo
                                     mochilaPortatil.pagarMochilaPortatil();
                                     Console.ReadKey();
                                     break;
-                                case "2":
+                                case 2:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 2! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto:  Mochila escolar");
@@ -894,7 +901,7 @@ namespace Catalogo
                                     mochilaEscolar.pagarMochilaEscolar();
                                     Console.ReadKey();
                                     break;
-                                case "3":
+                                case 3:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 3! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto:  Mochila para viajes");
@@ -907,7 +914,7 @@ namespace Catalogo
                                     mochilaViaje.pagarMochilaViaje();
                                     Console.ReadKey();
                                     break;
-                                case "4":
+                                case 4:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 4! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: zapatos de ballet");
@@ -924,7 +931,7 @@ namespace Catalogo
                                     zapatoDeBallet.pagarBalletDescuento();
                                     Console.ReadKey();
                                     break;
-                                case "5":
+                                case 5:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 5! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -942,7 +949,7 @@ namespace Catalogo
                                     zapatoDeCuero.pagarCueroDescuento();
                                     Console.ReadKey();
                                     break;
-                                case "6":
+                                case 6:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 6! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -960,7 +967,7 @@ namespace Catalogo
                                     zapatoDeCharol.pagarCharolDescuento();
                                     Console.ReadKey();
                                     break;
-                                case "7":
+                                case 7:
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 7! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
                                     Console.WriteLine("\nProducto: vestido de gala"  );
@@ -975,7 +982,7 @@ namespace Catalogo
                                     vestidoDeGala.pagarGalaDescuento();
                                     Console.ReadKey();
                                     break;
-                                case "8":
+                                case 8:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 8! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -991,7 +998,7 @@ namespace Catalogo
                                     vestidoDeNoche.pagarNocheDescuento();
                                     Console.ReadKey();
                                     break;
-                                case "9":
+                                case 9:
 
                                     Console.WriteLine("\n¡Ha seleccionado la Opción 9! ");
                                     Console.WriteLine("********** Datos del producto ********** ");
@@ -1007,20 +1014,24 @@ namespace Catalogo
                                     vestidoDeSeda.pagarSedaDescuento();
                                     Console.ReadKey();
                                     break;
-                                case "10":
+                                case 10:
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("¡Eligio salir! fin de las consultas");
                                     break;
                                 default:
+                                    
                                     Console.WriteLine("Opción inválida");
                                     break;
                             }
 
                         }
-                        while (Option != "10");
-
+                        while (Option != 10);
+                        
                         Console.ReadKey();
+                        Console.Clear();
                         break;
-                    case "6":
+                    case 6:
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("\n¡Gracias por usar nuestro catalogo! Presione una tecla para salir.");
                         Console.ReadKey();
                         break;
@@ -1032,7 +1043,7 @@ namespace Catalogo
                 }
                 Console.ReadKey();
             }
-            while (Option !="6");
+            while (Option !=6);
             Console.ReadLine();
 
 
