@@ -106,7 +106,7 @@ namespace Catalogo
                         List<string> tallaCamisa = new List<string>() { "XS extra pequeña", "S pequeña", "M mediana", "L grande", "XL extra grande", "XXL doble extra grande", "XXXL triple extra grande" };
                         do
                         {
-                            Console.WriteLine("Ingresa un número del 1 al 5:");
+                            Console.WriteLine("Ingresa un número del 1 al 11:");
                             Option = Console.ReadLine();
 
                             switch (Option)
@@ -283,7 +283,7 @@ namespace Catalogo
                         List<string> tallaPantalones = new List<string>() { "XS extra pequeña", "S pequeña", "M mediana", "L grande", "XL extra grande", "XXL doble extra grande", "XXXL triple extra grande" };
                         do
                         {
-                            Console.WriteLine("Ingresa un número del 1 al 5:");
+                            Console.WriteLine("Ingresa un número del 1 al 11:");
                             Option = Console.ReadLine();
 
                             switch (Option)
