@@ -430,6 +430,12 @@ namespace Catalogo
                                     pantalónLow_Rise.pagarPantalónLow_rise();
                                     Console.ReadKey();
                                     break;
+                                case "11":
+                                    Console.WriteLine("¡Eligio salir! fin de las consultas");
+                                    break;
+                                default:
+                                    Console.WriteLine("Opción inválida");
+                                    break;
 
                             }
                         }
