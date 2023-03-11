@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +43,8 @@ namespace Catalogo
         public void pagarMochilaPortatil()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (precio() * 0.20);
+            double proceso = pagar - (precio() * 0.20);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -82,7 +84,8 @@ namespace Catalogo
         public void pagarMochilaEscolar()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (precio() * 0.10);
+            double proceso = pagar - (precio() * 0.10);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -122,7 +125,8 @@ namespace Catalogo
         public void pagarMochilaViaje()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (precio() * 0.50);
+            double proceso = pagar - (precio() * 0.50);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -144,7 +148,8 @@ namespace Catalogo
         public void pagarBalletDescuento()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (zapatosBallet.precio() * 0.50);
+            double proceso = pagar - (zapatosBallet.precio() * 0.50);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -167,7 +172,8 @@ namespace Catalogo
         public void pagarCueroDescuento()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (zapatosCuero.precio() * 0.30);
+            double proceso = pagar - (zapatosCuero.precio() * 0.30);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -189,7 +195,8 @@ namespace Catalogo
         public void pagarCharolDescuento()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (zapatosCharol.precio() * 0.40);
+            double proceso = pagar - (zapatosCharol.precio() * 0.40);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -211,7 +218,8 @@ namespace Catalogo
         public void pagarGalaDescuento()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (vestidoGala.precio() * 0.20);
+            double proceso = pagar - (vestidoGala.precio() * 0.20);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -234,7 +242,8 @@ namespace Catalogo
         public void pagarNocheDescuento()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (vestidoNoche.precio() * 0.10);
+            double proceso = pagar - (vestidoNoche.precio() * 0.10);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
@@ -256,7 +265,8 @@ namespace Catalogo
         public void pagarSedaDescuento()
         {
             double pagar = double.Parse(Console.ReadLine());
-            double total = pagar - (vestidoSeda.precio() * 0.10);
+            double proceso = pagar - (vestidoSeda.precio() * 0.10);
+            double total = pagar - proceso;
             if (total < 0)
             {
                 Console.WriteLine("Resultado: debe la cantidad de $" + total);
